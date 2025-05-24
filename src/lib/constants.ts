@@ -8,8 +8,8 @@ export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/packages", label: "All Packages" },
   { href: "/paragliding", label: "Paragliding" },
-  { href: "/hang-gliding", label: "Hang Gliding" },
-  { href: "/mountain-biking", label: "Mountain Biking" },
+  // { href: "/hang-gliding", label: "Hang Gliding" }, // Removed
+  // { href: "/mountain-biking", label: "Mountain Biking" }, // Removed
   { href: "/hotels", label: "Hotels" },
   { href: "/camping", label: "Camping" },
   { href: "/trekking", label: "Trekking" },

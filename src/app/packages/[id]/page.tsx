@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Clock, IndianRupee, MapPin, Users, Check, X, Info, Star, Tag, Plane, Hotel, Footprints, Tent, Bus, Bike, Wind } from "lucide-react";
+import { Clock, IndianRupee, MapPin, Users, Check, X, Info, Star, Tag, Plane, Hotel, Footprints, Tent, Bus } from "lucide-react"; // Removed Bike, Wind
 import Link from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { CONTACT_PHONE, REDBUS_LINK } from "@/lib/constants";
@@ -26,8 +26,8 @@ const getPackageTypeIcon = (type: Package["type"]) => {
     case "trekking": return <Footprints className="w-5 h-5 mr-2 text-primary" />;
     case "camping": return <Tent className="w-5 h-5 mr-2 text-primary" />;
     case "bus": return <Bus className="w-5 h-5 mr-2 text-primary" />;
-    case "mountain-biking": return <Bike className="w-5 h-5 mr-2 text-primary" />;
-    case "hang-gliding": return <Wind className="w-5 h-5 mr-2 text-primary" />;
+    // case "mountain-biking": return <Bike className="w-5 h-5 mr-2 text-primary" />; // Removed
+    // case "hang-gliding": return <Wind className="w-5 h-5 mr-2 text-primary" />; // Removed
     case "travel":
     case "combo":
     default: return <Tag className="w-5 h-5 mr-2 text-primary" />;

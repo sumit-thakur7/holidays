@@ -6,7 +6,7 @@ export interface Package {
   price: number;
   duration: string; // e.g., "3 Nights / 4 Days" or numeric for nights
   images: string[]; // URLs to images
-  type: "paragliding" | "hotel" | "travel" | "trekking" | "camping" | "bus" | "combo" | "mountain-biking" | "hang-gliding";
+  type: "paragliding" | "hotel" | "travel" | "trekking" | "camping" | "bus" | "combo"; // Removed "mountain-biking" | "hang-gliding"
   theme?: "Adventure" | "Honeymoon" | "Family" | "Spiritual" | "Wildlife";
   combinedWith?: string[]; // e.g., ["Dharamshala", "Mcleodganj"]
   startingFrom?: string; // e.g., "Delhi", "Bir Billing"
