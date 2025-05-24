@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo } from "react";
@@ -90,7 +91,7 @@ export function PackageList({ packages }: PackageListProps) {
         </div>
       )}
       <p className="text-sm text-muted-foreground mt-8 text-center">
-        { MOCK_PACKAGES.length } Bir Billing Tour Packages Found
+        { sortedAndFilteredPackages.length } Bir Billing Tour {sortedAndFilteredPackages.length === 1 ? 'Package' : 'Packages'} Found
       </p>
     </div>
   );
