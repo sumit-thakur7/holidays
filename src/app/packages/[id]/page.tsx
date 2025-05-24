@@ -1,3 +1,4 @@
+
 import { MOCK_PACKAGES } from "@/data/mockData";
 import type { Package } from "@/types";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Clock, IndianRupee, MapPin, Users, Check, X, Info, Star, Tag, Plane, Hotel, Footprints, Tent, Bus } from "lucide-react";
+import { Clock, IndianRupee, MapPin, Users, Check, X, Info, Star, Tag, Plane, Hotel, Footprints, Tent, Bus, Bike, Wind } from "lucide-react";
 import Link from "next/link";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { CONTACT_PHONE, REDBUS_LINK } from "@/lib/constants";
@@ -25,6 +26,8 @@ const getPackageTypeIcon = (type: Package["type"]) => {
     case "trekking": return <Footprints className="w-5 h-5 mr-2 text-primary" />;
     case "camping": return <Tent className="w-5 h-5 mr-2 text-primary" />;
     case "bus": return <Bus className="w-5 h-5 mr-2 text-primary" />;
+    case "mountain-biking": return <Bike className="w-5 h-5 mr-2 text-primary" />;
+    case "hang-gliding": return <Wind className="w-5 h-5 mr-2 text-primary" />;
     case "travel":
     case "combo":
     default: return <Tag className="w-5 h-5 mr-2 text-primary" />;
@@ -100,7 +103,7 @@ export default function PackageDetailPage({ params }: { params: { id: string } }
             <div className="flex items-center"><Clock className="w-5 h-5 mr-2 text-accent" /> Duration: {pkg.duration}</div>
             <div className="flex items-center"><Users className="w-5 h-5 mr-2 text-accent" /> Theme: {pkg.theme || "General"}</div>
             {pkg.startingFrom && <div className="flex items-center"><MapPin className="w-5 h-5 mr-2 text-accent" /> Starts From: {pkg.startingFrom}</div>}
-            <div className="flex items-center capitalize">{getPackageTypeIcon(pkg.type)}Type: {pkg.type}</div>
+            <div className="flex items-center capitalize">{getPackageTypeIcon(pkg.type)}Type: {pkg.type.replace('-', ' ')}</div>
           </div>
 
           {pkg.rating && (

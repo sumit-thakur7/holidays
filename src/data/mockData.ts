@@ -127,6 +127,38 @@ export const MOCK_PACKAGES: Package[] = [
     includes: ["Certified Instructors", "Solo Flying Training", "Theory Classes", "Equipment Rental"],
     tags: ["Skill Development"],
   },
+  {
+    id: "pkg9",
+    name: "Mountain Biking Challenge",
+    description: "Conquer rugged terrains and scenic trails on a mountain bike. For adrenaline junkies and nature lovers.",
+    price: 4500,
+    duration: "Full Day Trip",
+    images: ["https://placehold.co/600x400.png"],
+    dataAiHint: "mountain biking trail",
+    type: "mountain-biking",
+    theme: "Adventure",
+    startingFrom: "Bir",
+    rating: 4.6,
+    reviewsCount: 30,
+    includes: ["Mountain Bike Rental", "Helmet & Safety Gear", "Experienced Guide", "Packed Lunch"],
+    tags: ["New Activity"],
+  },
+  {
+    id: "pkg10",
+    name: "Hang Gliding Introductory Flight",
+    description: "Experience the unique sensation of hang gliding with a certified instructor over Bir Billing.",
+    price: 5500,
+    duration: "1-2 Hour Experience",
+    images: ["https://placehold.co/600x400.png"],
+    dataAiHint: "hang gliding sky",
+    type: "hang-gliding",
+    theme: "Adventure",
+    startingFrom: "Billing",
+    rating: 4.7,
+    reviewsCount: 15,
+    includes: ["Tandem Hang Gliding Flight", "Safety Briefing", "Certified Instructor"],
+    tags: ["Unique Experience"],
+  },
 ];
 
 export const MOCK_ATTRACTIONS: Attraction[] = [
@@ -165,6 +197,24 @@ export const MOCK_ATTRACTIONS: Attraction[] = [
     dataAiHint: "institute building",
     location: "Bir Colony",
     category: "Cultural Center",
+  },
+  {
+    id: "attr5",
+    name: "Baijnath Temple",
+    description: "An ancient temple dedicated to Lord Shiva, known for its exquisite Nagara style architecture and spiritual significance. Located about 30 minutes from Bir.",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "ancient temple hindu",
+    location: "Baijnath, HP",
+    category: "Temple",
+  },
+  {
+    id: "attr6",
+    name: "Palpung Sherabling Monastery",
+    description: "A large and vibrant Tibetan Buddhist monastic seat, offering a peaceful atmosphere and stunning traditional architecture. Located in the Bhattu forest.",
+    image: "https://placehold.co/600x400.png",
+    dataAiHint: "buddhist monastery forest",
+    location: "Upper Bhattu, near Bir",
+    category: "Monastery",
   },
 ];
 
@@ -295,4 +345,4 @@ export const DURATION_FILTERS: DurationFilter[] = [
 export const COMBINED_WITH_FILTERS: string[] = ["Dharamshala", "Mcleodganj", "Mandi", "Palampur", "Tirthan Valley"];
 export const STARTING_FROM_FILTERS: string[] = ["Dharamshala", "Delhi", "Pathankot", "Bir Billing"];
 export const THEME_FILTERS: string[] = ["Adventure", "Honeymoon", "Family", "Spiritual", "Wildlife"];
-export const LABEL_FILTERS: string[] = ["Trending Now", "Most Popular", "Skill Development", "Best Seller"];
+export const LABEL_FILTERS: string[] = ["Trending Now", "Most Popular", "Skill Development", "Best Seller", "New Activity", "Unique Experience"];
