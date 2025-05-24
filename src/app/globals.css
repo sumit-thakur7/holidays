@@ -18,8 +18,8 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 0 65% 50%; /* Strong Red */
-    --primary-foreground: 0 0% 98%; /* Off-white text on primary */
+    --primary: 220 75% 55%; /* Blue */
+    --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 0 0% 90%; /* Light Gray */
     --secondary-foreground: 0 0% 20%; /* Dark Gray text on secondary */
@@ -27,31 +27,31 @@ body {
     --muted: 0 0% 94%; /* Slightly darker light gray */
     --muted-foreground: 0 0% 45%; /* Medium Gray */
 
-    --accent: 0 75% 55%; /* Brighter Red */
+    --accent: 220 85% 60%; /* Brighter Blue */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    --destructive: 0 80% 50%; /* Clear Red for destructive */
+    --destructive: 0 80% 50%; /* Clear Red for destructive (Kept Red) */
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 85%; /* Light Gray border */
     --input: 0 0% 92%; /* Lighter Gray input background */
-    --ring: 0 65% 55%; /* Red for ring */
+    --ring: 220 75% 60%; /* Blue for ring */
 
-    --chart-1: 0 65% 50%;
-    --chart-2: 0 75% 55%;
-    --chart-3: 0 0% 50%;
-    --chart-4: 0 55% 40%;
-    --chart-5: 0 0% 30%;
+    --chart-1: 220 75% 55%; /* Blue */
+    --chart-2: 220 85% 60%; /* Brighter Blue */
+    --chart-3: 0 0% 50%; /* Neutral Gray */
+    --chart-4: 0 55% 40%; /* Neutral Darker Gray */
+    --chart-5: 0 0% 30%; /* Neutral Darkest Gray */
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 94%; /* Light gray for sidebar */
     --sidebar-foreground: 0 0% 10%; 
-    --sidebar-primary: 0 65% 50%; /* Red */
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 0 75% 55%; /* Brighter Red */
+    --sidebar-primary: 220 75% 55%; /* Blue */
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 85% 60%; /* Brighter Blue */
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 80%;
-    --sidebar-ring: 0 65% 55%;
+    --sidebar-ring: 220 75% 60%; /* Blue */
   }
 
   .dark {
@@ -64,7 +64,7 @@ body {
     --popover: 0 0% 10%; /* Dark Popover */
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 70% 55%; /* Vibrant Red */
+    --primary: 220 80% 65%; /* Vibrant Blue */
     --primary-foreground: 0 0% 100%; /* White text on primary */
 
     --secondary: 0 0% 15%; /* Darker Gray */
@@ -73,30 +73,30 @@ body {
     --muted: 0 0% 20%; /* Even Darker Gray */
     --muted-foreground: 0 0% 60%; /* Medium-Light Gray */
 
-    --accent: 0 80% 60%; /* Bright Accent Red */
+    --accent: 220 90% 70%; /* Bright Accent Blue */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
-    --destructive: 0 85% 50%; /* Strong Destructive Red */
+    --destructive: 0 85% 50%; /* Strong Destructive Red (Kept Red) */
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 20%; /* Dark Gray border */
     --input: 0 0% 14%; /* Very Dark Gray input background */
-    --ring: 0 70% 60%; /* Vibrant Red for ring */
+    --ring: 220 80% 70%; /* Vibrant Blue for ring */
     
-    --chart-1: 0 70% 55%;
-    --chart-2: 0 80% 60%;
-    --chart-3: 0 0% 70%;
-    --chart-4: 0 60% 45%;
-    --chart-5: 0 0% 50%;
+    --chart-1: 220 80% 65%; /* Vibrant Blue */
+    --chart-2: 220 90% 70%; /* Bright Accent Blue */
+    --chart-3: 0 0% 70%; /* Neutral Light Gray */
+    --chart-4: 0 60% 45%; /* Neutral Medium Gray */
+    --chart-5: 0 0% 50%; /* Neutral Darker Gray */
 
     --sidebar-background: 0 0% 6%; /* Even darker for sidebar */
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 0 70% 55%; /* Red */
+    --sidebar-primary: 220 80% 65%; /* Vibrant Blue */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 80% 60%; /* Brighter Red */
+    --sidebar-accent: 220 90% 70%; /* Bright Accent Blue */
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 0 70% 60%;
+    --sidebar-ring: 220 80% 70%; /* Vibrant Blue */
   }
 }
 
