@@ -18,7 +18,7 @@ body {
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 220 75% 55%; /* Blue */
+    --primary: 180 70% 45%; /* Teal */
     --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 0 0% 90%; /* Light Gray */
@@ -27,7 +27,7 @@ body {
     --muted: 0 0% 94%; /* Slightly darker light gray */
     --muted-foreground: 0 0% 45%; /* Medium Gray */
 
-    --accent: 220 85% 60%; /* Brighter Blue */
+    --accent: 180 80% 50%; /* Brighter Teal */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
     --destructive: 0 80% 50%; /* Clear Red for destructive (Kept Red) */
@@ -35,10 +35,10 @@ body {
 
     --border: 0 0% 85%; /* Light Gray border */
     --input: 0 0% 92%; /* Lighter Gray input background */
-    --ring: 220 75% 60%; /* Blue for ring */
+    --ring: 180 70% 50%; /* Teal for ring */
 
-    --chart-1: 220 75% 55%; /* Blue */
-    --chart-2: 220 85% 60%; /* Brighter Blue */
+    --chart-1: 180 70% 45%; /* Teal */
+    --chart-2: 180 80% 50%; /* Brighter Teal */
     --chart-3: 0 0% 50%; /* Neutral Gray */
     --chart-4: 0 55% 40%; /* Neutral Darker Gray */
     --chart-5: 0 0% 30%; /* Neutral Darkest Gray */
@@ -46,12 +46,12 @@ body {
 
     --sidebar-background: 0 0% 94%; /* Light gray for sidebar */
     --sidebar-foreground: 0 0% 10%; 
-    --sidebar-primary: 220 75% 55%; /* Blue */
+    --sidebar-primary: 180 70% 45%; /* Teal */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 85% 60%; /* Brighter Blue */
+    --sidebar-accent: 180 80% 50%; /* Brighter Teal */
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 80%;
-    --sidebar-ring: 220 75% 60%; /* Blue */
+    --sidebar-ring: 180 70% 50%; /* Teal */
   }
 
   .dark {
@@ -64,7 +64,7 @@ body {
     --popover: 0 0% 10%; /* Dark Popover */
     --popover-foreground: 0 0% 95%;
 
-    --primary: 220 80% 65%; /* Vibrant Blue */
+    --primary: 180 75% 55%; /* Vibrant Teal */
     --primary-foreground: 0 0% 100%; /* White text on primary */
 
     --secondary: 0 0% 15%; /* Darker Gray */
@@ -73,7 +73,7 @@ body {
     --muted: 0 0% 20%; /* Even Darker Gray */
     --muted-foreground: 0 0% 60%; /* Medium-Light Gray */
 
-    --accent: 220 90% 70%; /* Bright Accent Blue */
+    --accent: 180 85% 60%; /* Bright Teal */
     --accent-foreground: 0 0% 100%; /* White text on accent */
 
     --destructive: 0 85% 50%; /* Strong Destructive Red (Kept Red) */
@@ -81,22 +81,22 @@ body {
 
     --border: 0 0% 20%; /* Dark Gray border */
     --input: 0 0% 14%; /* Very Dark Gray input background */
-    --ring: 220 80% 70%; /* Vibrant Blue for ring */
+    --ring: 180 75% 60%; /* Vibrant Teal for ring */
     
-    --chart-1: 220 80% 65%; /* Vibrant Blue */
-    --chart-2: 220 90% 70%; /* Bright Accent Blue */
+    --chart-1: 180 75% 55%; /* Vibrant Teal */
+    --chart-2: 180 85% 60%; /* Bright Teal */
     --chart-3: 0 0% 70%; /* Neutral Light Gray */
     --chart-4: 0 60% 45%; /* Neutral Medium Gray */
     --chart-5: 0 0% 50%; /* Neutral Darker Gray */
 
     --sidebar-background: 0 0% 6%; /* Even darker for sidebar */
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 220 80% 65%; /* Vibrant Blue */
+    --sidebar-primary: 180 75% 55%; /* Vibrant Teal */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 90% 70%; /* Bright Accent Blue */
+    --sidebar-accent: 180 85% 60%; /* Bright Teal */
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 220 80% 70%; /* Vibrant Blue */
+    --sidebar-ring: 180 75% 60%; /* Vibrant Teal */
   }
 }
 
