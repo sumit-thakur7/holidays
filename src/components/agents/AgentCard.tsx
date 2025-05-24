@@ -1,15 +1,30 @@
+
 import Image from "next/image";
 import type { Agent } from "@/types";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Briefcase, CalendarDays } from "lucide-react";
+import { Star, Briefcase, CalendarDays, Facebook, Instagram, Twitter } from "lucide-react"; // Added social icons
 import Link from "next/link";
 import { CONTACT_PHONE } from "@/lib/constants";
 
 interface AgentCardProps {
   agent: Agent;
 }
+
+// Helper component to map string icon names to actual Lucide components for social links
+const SocialIcon = ({ name, className }: { name: string; className?: string }) => {
+  switch (name) {
+    case "Facebook":
+      return <Facebook className={className} />;
+    case "Instagram":
+      return <Instagram className={className} />;
+    case "Twitter":
+      return <Twitter className={className} />;
+    default:
+      return null; // Or a default icon
+  }
+};
 
 export function AgentCard({ agent }: AgentCardProps) {
   return (
@@ -47,6 +62,25 @@ export function AgentCard({ agent }: AgentCardProps) {
             ))}
           </div>
         </div>
+        {agent.socialLinks && agent.socialLinks.length > 0 && (
+          <div className="mt-4 pt-3 border-t">
+            <h4 className="text-sm font-semibold mb-2 text-foreground">Connect:</h4>
+            <div className="flex space-x-3">
+              {agent.socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <SocialIcon name={link.icon} className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
       </CardContent>
       <CardFooter className="p-4 border-t mt-auto">
         <Button asChild className="w-full shadow-md hover:shadow-lg transition-shadow">

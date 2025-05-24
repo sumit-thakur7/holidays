@@ -1,3 +1,4 @@
+
 import type { Package, Attraction, Agent, PriceRangeFilter, DurationFilter } from "@/types";
 
 export const MOCK_PACKAGES: Package[] = [
@@ -178,6 +179,10 @@ export const MOCK_AGENTS: Agent[] = [
     description: "Specializing in paragliding and trekking tours in Bir Billing for over 10 years. We ensure safety and unforgettable experiences.",
     specializations: ["Paragliding", "Trekking", "Adventure Tours"],
     memberSince: "2012",
+    socialLinks: [
+        { name: "Facebook", href: "#", icon: "Facebook" },
+        { name: "Instagram", href: "#", icon: "Instagram" },
+    ]
   },
   {
     id: "agent2",
@@ -189,6 +194,9 @@ export const MOCK_AGENTS: Agent[] = [
     description: "Your go-to experts for comfortable and scenic accommodations in Bir Billing. From budget hostels to luxury resorts.",
     specializations: ["Hotel Bookings", "Homestays", "Luxury Stays"],
     memberSince: "2015",
+    socialLinks: [
+        { name: "Facebook", href: "#", icon: "Facebook" },
+    ]
   },
   {
     id: "agent3",
@@ -200,6 +208,10 @@ export const MOCK_AGENTS: Agent[] = [
     description: "Passionate local guides offering curated trekking and camping experiences. Discover hidden gems with us.",
     specializations: ["Custom Treks", "Camping", "Local Sightseeing"],
     memberSince: "2018",
+    socialLinks: [
+        { name: "Instagram", href: "#", icon: "Instagram" },
+        { name: "Twitter", href: "#", icon: "Twitter" },
+    ]
   },
   {
     id: "agent4",
@@ -208,9 +220,14 @@ export const MOCK_AGENTS: Agent[] = [
     dataAiHint: "guide portrait",
     reviewsCount: 95,
     rating: 4.9,
-    description: "Experienced guide Amit Thakur, certified in professional trekking and safety courses, leads unforgettable adventures in Bir Billing's mountains.",
-    specializations: ["Trekking", "Camping", "Mountain Safety"],
+    description: "Amit Thakur is a professional mountaineering course guide, certified in advanced trekking and mountain safety. He leads unforgettable adventures in Bir Billing's majestic mountains.",
+    specializations: ["Mountaineering Courses", "Trekking", "Camping", "Mountain Safety"],
     memberSince: "2019",
+    socialLinks: [
+        { name: "Facebook", href: "#", icon: "Facebook" },
+        { name: "Instagram", href: "#", icon: "Instagram" },
+        { name: "Twitter", href: "#", icon: "Twitter" },
+    ]
   },
   {
     id: "agent5",
@@ -219,9 +236,13 @@ export const MOCK_AGENTS: Agent[] = [
     dataAiHint: "guide mountains",
     reviewsCount: 88,
     rating: 4.8,
-    description: "Jinder Thakur, a seasoned professional with advanced outdoor certifications, specializes in immersive trekking and camping experiences.",
-    specializations: ["Trekking", "Wilderness Camping", "Survival Skills"],
+    description: "Jinder Thakur, a seasoned professional mountaineering course guide with advanced outdoor certifications, specializes in immersive trekking and wilderness camping experiences.",
+    specializations: ["Mountaineering Courses", "Trekking", "Wilderness Camping", "Survival Skills"],
     memberSince: "2017",
+    socialLinks: [
+        { name: "Facebook", href: "#", icon: "Facebook" },
+        { name: "Instagram", href: "#", icon: "Instagram" },
+    ]
   },
   {
     id: "agent6",
@@ -230,9 +251,13 @@ export const MOCK_AGENTS: Agent[] = [
     dataAiHint: "professional guide",
     reviewsCount: 110,
     rating: 4.7,
-    description: "Aadarsh Thakur offers expertly guided treks and camps, backed by professional training and a deep love for the Himalayas.",
-    specializations: ["Camping", "Guided Treks", "Nature Walks"],
+    description: "Aadarsh Thakur offers expertly guided mountaineering courses, treks, and camps, backed by professional training and a deep love for the Himalayas.",
+    specializations: ["Mountaineering Courses", "Camping", "Guided Treks", "Nature Walks"],
     memberSince: "2020",
+    socialLinks: [
+        { name: "Instagram", href: "#", icon: "Instagram" },
+        { name: "Twitter", href: "#", icon: "Twitter" },
+    ]
   },
   {
     id: "agent7",
@@ -241,9 +266,12 @@ export const MOCK_AGENTS: Agent[] = [
     dataAiHint: "trekking expert",
     reviewsCount: 105,
     rating: 4.9,
-    description: "With professional qualifications in mountain guiding, Inderjeet Thakur ensures safe and memorable trekking and camping adventures.",
-    specializations: ["Trekking Expeditions", "High-Altitude Camping", "First Aid Certified"],
+    description: "With professional qualifications in mountain guiding and mountaineering courses, Inderjeet Thakur ensures safe and memorable trekking and camping adventures.",
+    specializations: ["Mountaineering Courses", "Trekking Expeditions", "High-Altitude Camping", "First Aid Certified"],
     memberSince: "2016",
+    socialLinks: [
+        { name: "Facebook", href: "#", icon: "Facebook" },
+    ]
   },
 ];
 

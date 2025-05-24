@@ -1,3 +1,4 @@
+
 export interface Package {
   id: string;
   name: string;
@@ -29,6 +30,12 @@ export interface Attraction {
   dataAiHint?: string;
 }
 
+export interface AgentSocialLink {
+  name: string;
+  href: string;
+  icon: string; // Corresponds to Lucide icon names or a custom mapping
+}
+
 export interface Agent {
   id: string;
   name: string;
@@ -39,6 +46,7 @@ export interface Agent {
   specializations: string[]; // e.g., ["Paragliding", "Luxury Stays", "Group Tours"]
   memberSince?: string; // e.g., "2020"
   dataAiHint?: string;
+  socialLinks?: AgentSocialLink[];
 }
 
 export interface PriceRangeFilter {
