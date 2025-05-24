@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -5,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/toaster";
 import { SITE_NAME } from "@/lib/constants";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton"; // Added import
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +38,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <Toaster />
+        <WhatsAppButton /> {/* Added WhatsApp button here */}
       </body>
     </html>
   );
