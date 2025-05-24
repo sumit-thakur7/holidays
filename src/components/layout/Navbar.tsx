@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MountainSnow, Menu, X, Phone, Mail } from "lucide-react";
 import { NAV_LINKS, SITE_NAME, CONTACT_PHONE, CONTACT_EMAIL } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose, SheetTitle } from "@/components/ui/sheet"; // Added SheetTitle
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -69,6 +69,7 @@ export function Navbar() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background p-6 flex flex-col">
+              <SheetTitle className="sr-only">{SITE_NAME} Menu</SheetTitle> {/* Added visually hidden title */}
               <div className="flex items-center justify-between mb-6">
                 <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
                   <MountainSnow className="h-7 w-7 text-primary" />
