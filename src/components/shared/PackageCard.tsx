@@ -74,3 +74,4 @@ export function PackageCard({ pkg }: PackageCardProps) {
       </CardFooter>
     </Card>
   );
+}
