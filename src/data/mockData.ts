@@ -5,7 +5,7 @@ export const MOCK_PACKAGES: Package[] = [
   {
     id: "pkg1",
     name: "Thrilling Paragliding Adventure",
-    description: "Experience the thrill of paragliding over the beautiful landscapes of Bir Billing. Includes tandem flight and safety gear.",
+    description: "Paragliding is an adventurous activity. One enjoyed it as much, as you fear from it. More the fare factor, more the thrill and more the adventure. As you concerned about safety, this is your real and true worry, if you flying first time here in Billing. Our Pilots are experienced, trained and know all the flying zones here. Bir-Billing Paragliding is quite safe, pilots here are experienced in tandem flights (2 person fly in one paraglider – one is pilot and other person is for joy ride). All the control and direction handled by pilot. Pilot flying with you have knowledge of air speed, altitude, clouds, wind, temperature and the route required for safe flight, you just enjoy the flight and he handle the rest.",
     price: 3500,
     duration: "1 Hour Flight",
     images: ["https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
@@ -159,6 +159,35 @@ export const MOCK_PACKAGES: Package[] = [
   //   includes: ["Tandem Hang Gliding Flight", "Safety Briefing", "Certified Instructor"],
   //   tags: ["Unique Experience"],
   // },
+   {
+    id: "pkg11",
+    name: "Camping and Fishing in Barot Valley",
+    description: "Barot is (1,830 m) Just 40 km by road from Joginder Nagar and 12 km by the haulage trolley, Barot packs an enormous range of outdoor activities. The reservoir of the Joginder Nagar Hydel Power Project is located here. A trout breeding centre makes it a wonderful place for angling.",
+    price: 7500,
+    duration: "2 Days / 1 Night",
+    images: ["https://images.unsplash.com/photo-1506694276412-6aca74a71581?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
+    dataAiHint: "fishing valley camping",
+    type: "camping",
+    theme: "Adventure",
+    startingFrom: "Barot Valley",
+    rating: 4.7,
+    reviewsCount: 35,
+    includes: ["Campsite accommodation", "All meals", "Fishing equipment", "Bonfire", "Local sightseeing"],
+    exclusions: ["Travel to Barot Valley", "Fishing permit fees"],
+    itinerary: [
+      {
+        day: 1,
+        title: "Arrival and Local Sightseeing",
+        description: "Early morning breakfast at camp site. After breakfast, time for local sightseeing including a natural waterfall and exploring Barot valley until lunch.",
+      },
+      {
+        day: 2,
+        title: "Full Day Fishing & Departure",
+        description: "Enjoy a full day of fishing. In the evening, enjoy a bonfire with your fellow campers. Depart after lunch on Day 2.",
+      },
+    ],
+    tags: ["New Activity", "Angling"],
+  },
 ];
 
 export const MOCK_ATTRACTIONS: Attraction[] = [
@@ -343,6 +372,6 @@ export const DURATION_FILTERS: DurationFilter[] = [
 ];
 
 export const COMBINED_WITH_FILTERS: string[] = ["Dharamshala", "Mcleodganj", "Mandi", "Palampur", "Tirthan Valley"];
-export const STARTING_FROM_FILTERS: string[] = ["Dharamshala", "Delhi", "Pathankot", "Bir Billing"];
+export const STARTING_FROM_FILTERS: string[] = ["Dharamshala", "Delhi", "Pathankot", "Bir Billing", "Barot Valley"];
 export const THEME_FILTERS: string[] = ["Adventure", "Honeymoon", "Family", "Spiritual", "Wildlife"];
-export const LABEL_FILTERS: string[] = ["Trending Now", "Most Popular", "Skill Development", "Best Seller", "New Activity", "Unique Experience"];
+export const LABEL_FILTERS: string[] = ["Trending Now", "Most Popular", "Skill Development", "Best Seller", "New Activity", "Unique Experience", "Angling"];
