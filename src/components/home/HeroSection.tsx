@@ -8,7 +8,7 @@ export function HeroSection() {
     <section className="relative bg-gradient-to-b from-background to-secondary py-20 md:py-32">
       <div className="absolute inset-0 opacity-20">
         <Image
-          src="https://placehold.co/1920x1080.png" // Replace with actual hero image
+          src="https://plus.unsplash.com/premium_photo-1686157758105-b100bd44945c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" // Replace with actual hero image
           alt="Bir Billing Paragliding"
           layout="fill"
           objectFit="cover"
