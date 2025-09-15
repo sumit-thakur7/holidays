@@ -47,6 +47,8 @@ export interface Agent {
   memberSince?: string; // e.g., "2020"
   dataAiHint?: string;
   socialLinks?: AgentSocialLink[];
+  fullDescription?: string;
+  certificateImage?: string;
 }
 
 export interface PriceRangeFilter {

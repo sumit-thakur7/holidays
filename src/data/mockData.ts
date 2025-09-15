@@ -251,7 +251,7 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent1",
     name: "Himalayan Adventures Co.",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "travel agent",
     reviewsCount: 250,
     rating: 4.8,
@@ -266,7 +266,7 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent2",
     name: "Mountain Valley Stays",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "friendly agent",
     reviewsCount: 180,
     rating: 4.6,
@@ -280,7 +280,7 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent3",
     name: "Explore Bir Treks",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "outdoor guide",
     reviewsCount: 120,
     rating: 4.7,
@@ -295,11 +295,13 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent4",
     name: "Amit Thakur",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "guide portrait",
     reviewsCount: 95,
     rating: 4.9,
-    description: "Amit Thakur is a professional mountaineering course guide, certified in advanced trekking and mountain safety. He leads unforgettable adventures in Bir Billing's majestic mountains.",
+    description: "Amit Thakur is a professional mountaineering course guide, certified in advanced trekking and mountain safety.",
+    fullDescription: "Amit Thakur is a highly experienced and certified professional mountaineer. Having completed his advanced mountaineering course from a prestigious institute, he possesses in-depth knowledge of the Himalayan terrain, advanced trekking techniques, and critical mountain safety protocols. Amit specializes in leading challenging expeditions and providing comprehensive training to aspiring mountaineers, ensuring every adventure is both thrilling and safe.",
+    certificateImage: "https://placehold.co/800x600.png",
     specializations: ["Mountaineering Courses", "Trekking", "Camping", "Mountain Safety"],
     memberSince: "2019",
     socialLinks: [
@@ -310,12 +312,14 @@ export const MOCK_AGENTS: Agent[] = [
   },
   {
     id: "agent5",
-    name: "Jinder Thakur",
-    image: "https://placehold.co/300x300.png",
+    name: "Jitender Thakur",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "guide mountains",
     reviewsCount: 88,
     rating: 4.8,
-    description: "Jinder Thakur, a seasoned professional mountaineering course guide with advanced outdoor certifications, specializes in immersive trekking and wilderness camping experiences.",
+    description: "Jitender Thakur, a seasoned professional mountaineering course guide with advanced outdoor certifications.",
+    fullDescription: "Jitender 'Jinder' Thakur is a seasoned professional mountaineering guide whose expertise is backed by advanced certifications in outdoor leadership and wilderness survival. He specializes in creating immersive trekking and wilderness camping experiences that go beyond the beaten path. Jinder's passion for the mountains is contagious, and his guidance ensures that every participant gains a deeper appreciation for nature while staying safe.",
+    certificateImage: "https://placehold.co/800x600.png",
     specializations: ["Mountaineering Courses", "Trekking", "Wilderness Camping", "Survival Skills"],
     memberSince: "2017",
     socialLinks: [
@@ -326,11 +330,13 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent6",
     name: "Aadarsh Thakur",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "professional guide",
     reviewsCount: 110,
     rating: 4.7,
-    description: "Aadarsh Thakur offers expertly guided mountaineering courses, treks, and camps, backed by professional training and a deep love for the Himalayas.",
+    description: "Aadarsh Thakur offers expertly guided mountaineering courses, treks, and camps, backed by professional training.",
+    fullDescription: "With a deep love for the Himalayas and professional training to match, Aadarsh Thakur offers expertly guided mountaineering courses, treks, and camps. He is a certified guide known for his meticulous planning and his ability to make even the most strenuous treks enjoyable. Aadarsh's friendly demeanor and extensive knowledge of local flora and fauna add a unique educational dimension to his expeditions.",
+    certificateImage: "https://placehold.co/800x600.png",
     specializations: ["Mountaineering Courses", "Camping", "Guided Treks", "Nature Walks"],
     memberSince: "2020",
     socialLinks: [
@@ -341,11 +347,13 @@ export const MOCK_AGENTS: Agent[] = [
   {
     id: "agent7",
     name: "Inderjeet Thakur",
-    image: "https://placehold.co/300x300.png",
+    image: "https://images.unsplash.com/photo-1482784160316-6eb046863ece?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dataAiHint: "trekking expert",
     reviewsCount: 105,
     rating: 4.9,
-    description: "With professional qualifications in mountain guiding and mountaineering courses, Inderjeet Thakur ensures safe and memorable trekking and camping adventures.",
+    description: "With professional qualifications in mountain guiding, Inderjeet Thakur ensures safe and memorable adventures.",
+    fullDescription: "Inderjeet Thakur combines his professional qualifications in mountain guiding and mountaineering with a passion for safety and education. As a certified First-Aid responder, he ensures that all his trekking and camping adventures adhere to the highest safety standards. Inderjeet specializes in high-altitude expeditions and is dedicated to providing memorable, safe, and transformative mountain experiences for all his clients.",
+    certificateImage: "https://placehold.co/800x600.png",
     specializations: ["Mountaineering Courses", "Trekking Expeditions", "High-Altitude Camping", "First Aid Certified"],
     memberSince: "2016",
     socialLinks: [

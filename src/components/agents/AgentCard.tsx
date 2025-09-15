@@ -1,12 +1,23 @@
 
+"use client";
+
 import Image from "next/image";
 import type { Agent } from "@/types";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Briefcase, CalendarDays, Facebook, Instagram, Twitter } from "lucide-react"; // Added social icons
+import { Star, Briefcase, Facebook, Instagram, Twitter, ExternalLink, Award } from "lucide-react";
 import Link from "next/link";
 import { CONTACT_PHONE } from "@/lib/constants";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogFooter,
+} from "@/components/ui/dialog";
 
 interface AgentCardProps {
   agent: Agent;
@@ -22,11 +33,13 @@ const SocialIcon = ({ name, className }: { name: string; className?: string }) =
     case "Twitter":
       return <Twitter className={className} />;
     default:
-      return null; // Or a default icon
+      return null;
   }
 };
 
 export function AgentCard({ agent }: AgentCardProps) {
+  const hasFullDetails = agent.fullDescription || agent.certificateImage;
+
   return (
     <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full rounded-lg">
       <CardHeader className="flex flex-col sm:flex-row items-center gap-4 p-4 bg-secondary/50">
@@ -82,10 +95,57 @@ export function AgentCard({ agent }: AgentCardProps) {
           </div>
         )}
       </CardContent>
-      <CardFooter className="p-4 border-t mt-auto">
+      <CardFooter className="p-4 border-t mt-auto flex gap-2">
         <Button asChild className="w-full shadow-md hover:shadow-lg transition-shadow">
           <Link href={`tel:${CONTACT_PHONE}?subject=Quote request for ${agent.name}`}>Get a Quote</Link>
         </Button>
+        {hasFullDetails && (
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="w-full">
+                View Details <ExternalLink className="w-4 h-4 ml-2" />
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-[625px]">
+              <DialogHeader>
+                <DialogTitle className="text-2xl text-primary">{agent.name}</DialogTitle>
+                <DialogDescription>
+                  Professional Mountaineering Guide
+                </DialogDescription>
+              </DialogHeader>
+              <div className="grid gap-4 py-4">
+                {agent.fullDescription && (
+                  <p className="text-sm text-muted-foreground">{agent.fullDescription}</p>
+                )}
+                {agent.certificateImage && (
+                  <div className="mt-4">
+                    <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
+                      <Award className="w-5 h-5 text-accent" />
+                      Certification
+                    </h3>
+                    <div className="p-2 border rounded-md">
+                        <Image
+                            src={agent.certificateImage}
+                            alt={`${agent.name}'s Certificate`}
+                            width={800}
+                            height={600}
+                            className="rounded-md w-full object-contain"
+                            data-ai-hint="certificate document"
+                        />
+                    </div>
+                  </div>
+                )}
+              </div>
+              <DialogFooter>
+                <DialogTrigger asChild>
+                  <Button type="button" variant="secondary">
+                    Close
+                  </Button>
+                </DialogTrigger>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+        )}
       </CardFooter>
     </Card>
   );
