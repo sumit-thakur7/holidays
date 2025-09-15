@@ -1,7 +1,7 @@
 
 export const SITE_NAME = "Bir Billing Holidays";
 export const CONTACT_EMAIL = "birbillingholiday@gmail.com";
-export const CONTACT_PHONE = "7018121830";
+export const CONTACT_PHONE = "+91 7018121830";
 export const CONTACT_ADDRESS = "Bir, Tehsil Baijnath, Distt. Kangra, HP";
 
 export const NAV_LINKS = [
